@@ -1,12 +1,10 @@
 import React from "react";
-import ToggleButton from "./toggleButton";
 import "./article.styles.css";
 
-const Article = () => {
+const Article = ({ style }) => {
   return (
     <>
-      <ToggleButton />
-      <div className="article">
+      <div className="article" style={style}>
         <p>
           Security is important. Nobody wants to be the person advocating for
           less security. So nobody wants to say it. But somebody has to say it.

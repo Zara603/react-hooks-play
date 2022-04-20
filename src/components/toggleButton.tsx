@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+
 import "./toggleButton.styles.css";
 
-const ToggleButton = () => {
-  const [isDark, setDark] = useState(false);
+const ToggleButton = ({ setDark, isDark }) => {
   const btnClassName = [
     "toggle-btn",
     isDark ? "toggle-btn-on" : "toggle-btn-off"

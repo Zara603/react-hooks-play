@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import ThemeContext from "./themeContext";
+import { ThemeContext } from "./themeContext";
 
 const ThemeProvider = (props) => {
   const initialState = { isDark: false };
